@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Globarte - Decoraciones con Globos</title>
+
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="left-side">
+            <a href="#"><img src="img/logo 12.png" alt="Logo Globarte"></a>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contáctanos</a>
+        </nav>
+    </header>
+    <div class="right-side">
+        <img src="img/tazas-personalizadas-sublimacion.jpg" alt="Decoraciones personalizadas">
+    </div>
+    <!-- Sección de inicio -->
+    <section id="inicio" class="container">
+        <div class="left-side">
+            <h1>Bienvenidos a <span class="highlight">Globarte</span></h1>
+            <p>Transformamos tus celebraciones en momentos inolvidables con nuestras decoraciones personalizadas con globos.</p>
+            <a href="#productos" class="btn">Explorar Decoraciones</a>
+        </div>
+
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="container">
+        <div class="productos-info">
+            <h2>Nuestros Productos</h2>
+            <p>Ofrecemos una amplia variedad de decoraciones con globos para todo tipo de eventos: cumpleaños, bodas, aniversarios y más. Encuentra lo que necesitas y dale un toque especial a tu celebración.</p>
+        </div>
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-item">
+                <img src="img/448481130_1456189775002755_7241253920655016370_n.jpg" alt="Arreglo de globos con forma de corazón">
+                <h3>Arreglo de Corazones</h3>
+                <p>Perfecto para aniversarios y celebraciones románticas.</p>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-item">
+                <img src="img/448628595_1085145012602069_8029773252446840333_n.jpg" alt="Decoración de cumpleaños con globos">
+                <h3>Decoración de Cumpleaños</h3>
+                <p>Un toque colorido para los mejores cumpleaños.</p>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product-item">
+                <img src="img/448696455_1841973386287681_8113712508663397397_n.jpg" alt="Torre de globos con número">
+                <h3>Torre con Número</h3>
+                <p>Ideal para celebrar edades y aniversarios especiales.</p>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-item">
+                <img src="img/448696455_390288326798956_8222114934952466872_n.jpg" alt="Centro de mesa con globos">
+                <h3>Centro de Mesa</h3>
+                <p>Elegancia y creatividad en cada celebración.</p>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-item">
+                <img src="img/448701361_1640981493358601_8267052181212127428_n.jpg" alt="Arco de globos multicolor">
+                <h3>Arco Multicolor</h3>
+                <p>Perfecto para entradas y eventos corporativos.</p>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-item">
+                <img src="img/448740199_462733536477212_60801159330419331_n.jpg" alt="Ramo de globos para niños">
+                <h3>Ramo Infantil</h3>
+                <p>Decoraciones temáticas que alegran a los más pequeños.</p>
+            </div>
+            <!-- Producto 7 -->
+            <div class="product-item">
+                <img src="img/448740319_714907707379774_4039005939264682924_n.jpg" alt="Decoración con globos temáticos">
+                <h3>Decoración Temática</h3>
+                <p>Perfecta para eventos personalizados con tus personajes favoritos.</p>
+            </div>
+            <!-- Producto 8 -->
+            <div class="product-item">
+                <img src="img/448743243_971346528110650_1089851051424224755_n.jpg" alt="Ramo de globos sorpresa">
+                <h3>Ramo Sorpresa</h3>
+                <p>Un regalo inesperado y lleno de alegría.</p>
+            </div>
+            <!-- Producto 9 -->
+            <div class="product-item">
+                <img src="img/448819701_1686659662075679_7625317530811832893_n.jpg" alt="Arreglo de globos para bodas">
+                <h3>Arreglo para Bodas</h3>
+                <p>Un toque elegante y sofisticado para el gran día.</p>
+            </div>
+            <!-- Producto 10 -->
+            <div class="product-item">
+                <img src="img/448821886_460006579999460_6881337727452071102_n.jpg" alt="Decoración con globos para baby shower">
+                <h3>Decoración Baby Shower</h3>
+                <p>Colores suaves y encantadores para futuros padres.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de contacto -->
+<section id="contacto" class="container">
+    <div class="contact-info">
+        <h2>Contáctanos</h2>
+        <p>¿Estás planeando un evento especial? Haz clic en el botón y escríbenos para crear la decoración perfecta para ti.</p>
+        <button class="btn" id="contact-btn">Enviar Mensaje</button>
+    </div>
+</section>
+
+
+
+<!-- Modal de contacto -->
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2>Formulario de Contacto</h2>
+        <form action="mailto:contacto@globarte.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </div>
+</div>
+
+<!-- Agregar el archivo JavaScript justo antes del cierre de la etiqueta body -->
+<script src="menu.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 Globarte. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
